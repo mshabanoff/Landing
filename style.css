@@ -2,18 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&family=Roboto:wght@400;500&display=swap');
 
-/* 
 :root {
   --primary: #5FB1BA;
   --secondary: #E55546;
   --supporting: #C5C4C4;
-
   --white: #ffffff;
   --grey: #F9F9F9;
   --blue: #C8E7ED;
 }
-*/
-
 
 * {
     font-family: 'Lexend', sans-serif;
@@ -23,17 +19,10 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 
 /* Layouts */
-
-.container {
-    width: 100%;
-    /* position: relative; */
-    /* width: 1440px; */
-    /* height: 1815px; */
-} 
 
 .flex {
     display: flex;
@@ -47,15 +36,13 @@ body {
     flex-direction: column;
 }
 
-
-
 /* Sections */
 
 section {
     position: relative;
     width: 988px;
     height: 20rem;
-    background: #5FB1BA;
+    background: var(--primary);
     border-radius: 10px;
 }
 
@@ -65,7 +52,7 @@ section {
 
 .section-2 {
     height: 280px;
-    background: #ffffff;
+    background: var(--white);
 }
 
 .section-3 {
@@ -77,6 +64,37 @@ section {
     height: 400px;
 }
 
+/* Headers */
+
+.h2-header {
+    position: absolute;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: var(--white)
+}
+
+.section-1 .h2-header {
+    left: 56px;
+    top: 84px;
+    width: 314px;
+    height: 96px;
+}
+
+.section-3 .h2-header {
+    width: 314px;
+    height: 96px;
+    left: 56px;
+    top: 84px;
+}
+
+.section-4 .h2-header {
+    width: 322px;
+    height: 48px;
+    left: 56px;
+    top: 112px;
+}
+
 /* First Section */
 
 .section-1 img {
@@ -86,42 +104,14 @@ section {
     bottom: 0%;
 }
 
-
 .p-header {
     position: absolute;
     top: 56px;
     left: 56px;
-    color: #ffffff;
+    color: var(--white);
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-}
-
-/* .p-light {
-    font-weight: 300;
-} */
-
-/* .p-bolder {
-    font-weight: 500;
-} */
-
-/* .h {
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 48px;
-} */
-
-.section-1 h2 {
-    position: absolute;
-    left: 56px;
-    top: 84px;
-    width: 314px;
-    height: 96px;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 48px;
 }
 
 .section-1 form {
@@ -130,7 +120,7 @@ section {
     height: 48px;
     left: 56px;
     top: 220px;
-    background: #FFFFFF;
+    background: var(--white);
     border-radius: 100px;
     display: flex;
     flex-direction: row;
@@ -150,14 +140,14 @@ section {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: #C5C4C4;
+    color: var(--supporting);
 }
 
 .section-1 form button {
     position: absolute;
     top: 8px;
     left: 380px;
-    background-color: #ffffff;
+    background-color: var(--white);
     border: none;
 }
 
@@ -184,7 +174,7 @@ section {
     gap: 8px;
     width: 79px;
     height: 32px;
-    background: #C8E7ED;
+    background: var(--blue);
     border-radius: 100px;
     font-weight: 500;
     font-size: 16px;
@@ -212,7 +202,6 @@ section {
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    /* gap: 8px; */
     position: absolute;
     width: 386px;
     height: 80px;
@@ -223,12 +212,11 @@ section {
 .section-2 div:first-child p {
     position: absolute;
     top: 56px;
-    /* width: 386px; */
     height: 24px;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
-    color: #C5C4C4;
+    color: var(--supporting);
 }
 
 .section-2 .grid-4x2 {
@@ -252,12 +240,11 @@ section {
     justify-content: center;
     align-items: flex-start;
     padding: 16px;
-    background-color: #F9F9F9;
-    /* gap: 16px; */
+    background-color: var(--grey);
 }
 
 .section-2 .grid-4x2-item:last-child {
-    background: #E55546;
+    background: var(--secondary);
 }
 
 .section-2 .grid-4x2-item svg {
@@ -270,7 +257,6 @@ section {
     position: absolute;
     top: 16px;
     left: 72px;
-    /* width: 107px; */
     height: 24px;
     font-weight: 500;
     font-size: 16px;
@@ -282,27 +268,14 @@ section {
     position: absolute;
     top: 40px;
     left: 72px;
-    /* width: 88px; */
     height: 16px;
     font-weight: 300;
     font-size: 12px;
     line-height: 16px;
-    color: #C5C4C4;
+    color: var(--supporting);
 }
 
 /* Third Section */
-
-.section-3 h2 {
-    position: absolute;
-    width: 314px;
-    height: 96px;
-    left: 56px;
-    top: 84px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 48px;
-    color: #FFFFFF;
-}
 
 .section-3 button {
     display: flex;
@@ -316,8 +289,8 @@ section {
    height: 48px;
    left: 56px;
    top: 204px;
-   background: #E55546;
-   color: #ffffff;
+   background: var(--secondary);
+   color: var(--white);
    border-radius: 100px;
    border: none;
    font-weight: 500;
@@ -329,7 +302,6 @@ section {
     position: absolute;
     left: 0%;
     right: 0%;
-    /* top: 0%; */
     bottom: 0%;
 }
 
@@ -363,7 +335,7 @@ section {
     left: 16px;
     width: 40px;
     height: 40px;
-    background: #FFFFFF;
+    background: var(--white);
     border-radius: 10px;
 
 }
@@ -377,12 +349,10 @@ section {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 /* Fourth Section */
-
-
 
 .section-4 p {
     position: absolute;
@@ -393,21 +363,8 @@ section {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: var(--white);
 }
-
-.section-4 h2 {
-    position: absolute;
-    width: 322px;
-    height: 48px;
-    left: 56px;
-    top: 112px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 48px;
-    color: #FFFFFF;
-}
-
 
 .section-4 div:first-child {
     position: absolute;
@@ -426,27 +383,20 @@ section {
 }
 
 .section-4 div button:first-child {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 12px 24px;
-    gap: 8px;
-    position: absolute;
     width: 170px;
     height: 48px;
     left: 0px;
     top: 0px;
-    background: #E55546;
+    background: var(--secondary);
     border-radius: 100px;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #ffffff;
+    color: var(--white);
     border: none;
 }
 
-.section-4 div button:nth-child(2) {
+.section-4 div button {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -454,13 +404,16 @@ section {
     padding: 12px 24px;
     gap: 8px;
     position: absolute;
+}
+
+.section-4 div button:nth-child(2) {
     width: 275px;
     height: 48px;
     left: 185px;
     top: 0px;
-    background-color: #5FB1BA;
-    border: 1px solid #FFFFFF;
-    color: #FFFFFF;
+    background-color: var(--primary);
+    border: 1px solid var(--white);
+    color: var(--white);
     border-radius: 100px;   
 }
 
@@ -474,6 +427,64 @@ section {
     left: 52px;
 }
 
+.section-4 .frame {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    gap: 16px;
+    background: rgba(143, 219, 227, 0.6);
+    border-radius: 10px;
+    width: 216px;
+    height: 56px;
+    position: absolute;
+    left: 56px;
+    top: 288px;
+}
+
+.section-4 .frame.frame-2 {
+    width: 226px;
+    left: 288px;
+    top: 288px;
+}
+
+.section-4 .frame.frame-3 {
+    width: 210px;
+    left: 530px;
+    top: 288px;
+}
+
+.section-4 .frame svg {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 40px;
+    height: 40px;
+    background: var(--white);
+    border-radius: 10px;
+}
+
+.section-4 .frame p {
+    position: absolute;
+    top: 16px;
+    left: 64px;
+    width: 144px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white);
+}
+
+.section-4 .frame.frame-2 p {
+    width: 154px;
+}
+
+.section-4 .frame.frame-3 p {
+    width: 138px;
+}
+
 #ikbal {
     position: absolute;
     left: 548px;
@@ -484,174 +495,3 @@ section {
     left: 675px;
     top: 64px;
 }
-
-
-
-#example {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
-    gap: 16px;
-    background: rgba(143, 219, 227, 0.6);
-    border-radius: 10px;
-    position: absolute;
-    width: 216px;
-    height: 56px;
-    left: 56px;
-    top: 288px;
-}
-
-/* 
-// #example
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-padding: 8px;
-gap: 16px;
-background: rgba(143, 219, 227, 0.6);
-border-radius: 10px;
-width: 216px;
-height: 56px;
-position: absolute;
-*/
-
-/* 
-// #example2
-left: 288px;
-top: 288px;
-*/
-
-/* 
-// #example3
-left: 530px;
-top: 288px;
-*/
-
-
-
-#example svg {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    width: 40px;
-    height: 40px;
-    background: #FFFFFF;
-    border-radius: 10px;
-}
-
-#example p {
-    position: absolute;
-    top: 16px;
-    left: 64px;
-    width: 144px;
-    height: 24px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-}
-
-#example2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
-    gap: 16px;
-    background: rgba(143, 219, 227, 0.6);
-    border-radius: 10px;
-    position: absolute;
-    width: 226px;
-    height: 56px;
-    left: 288px;
-    top: 288px;
-}
-
-#example2 svg {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    width: 40px;
-    height: 40px;
-    background: #FFFFFF;
-    border-radius: 10px;
-}
-
-#example2 p {
-    position: absolute;
-    top: 16px;
-    left: 64px;
-    width: 154px;
-    height: 24px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-}
-
-#example3 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
-    gap: 16px;
-    background: rgba(143, 219, 227, 0.6);
-    border-radius: 10px;
-    position: absolute;
-    width: 210px;
-    height: 56px;
-    left: 530px;
-    top: 288px;
-}
-
-#example3 svg {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    width: 40px;
-    height: 40px;
-    background: #FFFFFF;
-    border-radius: 10px;
-}
-
-#example3 p {
-    position: absolute;
-    top: 16px;
-    left: 64px;
-    width: 138px;
-    height: 24px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-}
-
-/* .section-1 p {
-    position: absolute;
-    left: 56px;
-    top: 56px;
-    width:205px;
-    height: 24px;
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-} */
-
-
-
-/* .section-3 p{
-    position: absolute;
-    width: 381px;
-    height: 24px;
-    left: 56px;
-    top: 56px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height:24px;
-    color: #FFFFFF;
-} */
